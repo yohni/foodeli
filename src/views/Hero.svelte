@@ -5,7 +5,6 @@
 </script>
 
 <div>
-	<Navbar />
 	<div class="container flex flex-col gap-6">
 		<div class="py-8">
 			<button
