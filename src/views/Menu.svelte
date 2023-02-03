@@ -2,8 +2,9 @@
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import '@splidejs/svelte-splide/css';
 	import { onMount } from 'svelte';
-	import { PUBLIC_API_KEY } from '$env/static/public';
 	import Icon from '@iconify/svelte';
+
+	export let spoonApiKey: string;
 
 	interface Product {
 		id: number;
@@ -20,7 +21,7 @@
 
 	onMount(async () => {
 		const res = await fetch(
-			`https://api.spoonacular.com/recipes/complexSearch?query=asian&maxFat=25&number=10&apiKey=${PUBLIC_API_KEY}`
+			`https://api.spoonacular.com/recipes/complexSearch?query=asian&maxFat=25&number=10&apiKey=${spoonApiKey}`
 		);
 		mealsData = await res.json();
 	});
