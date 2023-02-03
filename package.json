@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@splidejs/svelte-splide": "^0.2.9",
 		"clsx": "^1.2.1"
 	}
 }

@@ -61,7 +61,7 @@
 							'border-[#BDBDBD] border border-solid rounded-full mt-6'
 						)}
 					>
-						<span class="">Email Address</span>
+						<span class="">Email Us</span>
 						<Icon icon="carbon:send" class="text-red-primary text-xl" />
 					</button>
 				{/if}

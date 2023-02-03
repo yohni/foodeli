@@ -5,13 +5,13 @@
 
 @layer base {
   html, body {
-    @apply font-medium;
+    @apply font-medium bg-slate-200/10;
     font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans;
   }
 }
 
 @layer components {
   .container {
-    @apply p-4 max-w-6xl;
+    @apply p-4 md:p-8 max-w-xl mx-auto bg-white;
   }
 }
