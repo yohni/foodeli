@@ -260,7 +260,6 @@ const Services = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;
   const { spoonApiKey } = data;
-  console.log(data.spoonApiKey);
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
   return `<div>${validate_component(Hero, "Hero").$$render($$result, {}, {}, {})}
