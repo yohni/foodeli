@@ -257,14 +257,12 @@ const Services = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     {}
   )}</div></div>`;
 });
+const API_KEY = "d524e264213c47c58b5221058a4846f6";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { data } = $$props;
-  const { spoonApiKey } = data;
-  if ($$props.data === void 0 && $$bindings.data && data !== void 0)
-    $$bindings.data(data);
+  const spoonApiKey = API_KEY;
   return `<div>${validate_component(Hero, "Hero").$$render($$result, {}, {}, {})}
 	${validate_component(Services, "Services").$$render($$result, {}, {}, {})}
-	${validate_component(Menu, "Menu").$$render($$result, { spoonApiKey }, {}, {})}</div>`;
+	${`${validate_component(Menu, "Menu").$$render($$result, { spoonApiKey }, {}, {})}`}</div>`;
 });
 export {
   Page as default

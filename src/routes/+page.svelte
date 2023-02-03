@@ -2,16 +2,15 @@
 	import Hero from '../views/Hero.svelte';
 	import Menu from '../views/Menu.svelte';
 	import Services from '../views/Services.svelte';
+	import { API_KEY } from '../lib/Env';
 
-	/** @type {import('./$types').PageServerData} */
-	export let data;
-	const { spoonApiKey } = data;
+	const spoonApiKey = API_KEY;
 </script>
 
 <div>
 	<Hero />
 	<Services />
-	<!-- {#if spoonApiKey}
+	{#if spoonApiKey}
 		<Menu {spoonApiKey} />
-	{/if} -->
+	{/if}
 </div>
