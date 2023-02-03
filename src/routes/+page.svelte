@@ -11,7 +11,7 @@
 <div>
 	<Hero />
 	<Services />
-	{#if spoonApiKey}
+	<!-- {#if spoonApiKey}
 		<Menu {spoonApiKey} />
-	{/if}
+	{/if} -->
 </div>
