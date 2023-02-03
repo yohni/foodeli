@@ -1,5 +1,4 @@
-<script>
-	import Navbar from '../components/Navbar.svelte';
+<script lang="ts">
 	import clsx from 'clsx';
 	import Icon from '@iconify/svelte';
 </script>

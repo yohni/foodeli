@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import ServiceCard from '../components/ServiceCard.svelte';
 </script>
 
