@@ -6,8 +6,6 @@
 	/** @type {import('./$types').PageServerData} */
 	export let data;
 	const { spoonApiKey } = data;
-
-	console.log(data.spoonApiKey);
 </script>
 
 <div>
