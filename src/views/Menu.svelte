@@ -21,7 +21,7 @@
 
 	onMount(async () => {
 		const res = await fetch(
-			`https://api.spoonacular.com/recipes/complexSearch?query=asian&maxFat=25&number=10&apiKey=${spoonApiKey}`
+			`https://api.spoonacular.com/recipes/complexSearch?query=asian&maxFat=25&number=5&apiKey=${spoonApiKey}`
 		);
 		mealsData = await res.json();
 	});

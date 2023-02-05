@@ -13,7 +13,12 @@ module.exports = {
 			colors: {
 				'red-primary': '#EB0029',
 				'base-black-1': '#010F1C',
-				'base-black-2': '#333333'
+				'base-black-2': '#333333',
+				'base-black-3': '#828282',
+				'yellow-primary': '#F2C94C'
+			},
+			animation: {
+				'spin-slow': 'spin 3s linear infinite'
 			}
 		}
 	},
