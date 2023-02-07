@@ -5,13 +5,17 @@
 
 @layer base {
   html, body {
-    @apply font-medium bg-slate-200/10;
+    @apply font-medium;
     font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans;
   }
 }
 
 @layer components {
   .container {
-    @apply p-4 md:p-8 max-w-xl mx-auto bg-white;
+    @apply p-4 md:p-8 max-w-7xl mx-auto bg-white;
+  }
+
+  .btn-hover {
+    @apply transform hover:-translate-y-px transition-all duration-200 active:translate-y-px;
   }
 }
