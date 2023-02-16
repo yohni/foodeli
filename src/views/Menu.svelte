@@ -27,9 +27,9 @@
 	});
 </script>
 
-<div class="container py-10">
+<div class="container py-10 xl:py-16">
 	<h6 class="text-center text-red-primary font-semibold text-lg mb-4">OUR MENU</h6>
-	<h1 class="font-rubik font-bold text-5xl text-center mb-6">
+	<h1 class="font-rubik font-bold text-5xl text-center mb-6 xl:mb-10">
 		Menu That Always Makes You Fall In Love
 	</h1>
 
@@ -37,14 +37,25 @@
 		options={{
 			gap: '1rem',
 			autoplay: true,
-			perPage: 1,
-			heightRatio: 1.2
+			perPage: 4,
+			heightRatio: 1.2,
+			breakpoints: {
+				1400: {
+					perPage: 2
+				},
+				1021: {
+					perPage: 1
+				},
+				400: {
+					perPage: 1
+				}
+			}
 		}}
 		aria-label="My Favorite Images"
 	>
 		{#if mealsData?.results?.length > 0}
 			{#each mealsData.results as p, i}
-				<SplideSlide>
+				<SplideSlide class=" max-h-[450px]">
 					<div class="h-full overflow-hidden rounded-[30px] relative">
 						<img
 							class="w-full h-full object-cover object-center"

@@ -9,18 +9,23 @@
 	let isInViewImage: boolean;
 </script>
 
-<div class="container py-10 flex flex-col gap-6">
+<div
+	class="container py-10 xl:py-16 flex flex-col xl:flex-row-reverse xl:items-center xl:gap-10 xl:justify-between w-full gap-6"
+>
 	<div
-		use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
+		class="xl:text-left"
+		use:inview={{ unobserveOnEnter: true }}
 		on:change={({ detail }) => {
 			isInView = detail.inView;
 		}}
 	>
 		{#if isInView}
-			<h6 in:fly class="text-center text-red-primary font-semibold text-lg mb-4">WHAT THEY SAY</h6>
+			<h6 in:fly class="text-center xl:text-left text-red-primary font-semibold text-lg mb-4">
+				WHAT THEY SAY
+			</h6>
 			<h1
 				in:fly={{ y: 200, duration: 200, delay: 300 }}
-				class="font-rubik font-bold text-5xl text-center mb-6"
+				class="font-rubik font-bold text-5xl text-center xl:text-left mb-6"
 			>
 				What Our Customers Say About Us
 			</h1>
@@ -52,7 +57,7 @@
 	</div>
 
 	<div
-		use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
+		use:inview={{ unobserveOnEnter: true }}
 		on:change={({ detail }) => {
 			isInViewImage = detail.inView;
 		}}

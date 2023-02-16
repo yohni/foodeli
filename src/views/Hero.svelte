@@ -14,7 +14,7 @@
 	}}
 >
 	{#if isInView}
-		<div class="container flex flex-col xl:flex-row gap-6">
+		<div class="container flex flex-col xl:flex-row gap-6 xl:py-16">
 			<div class="py-8">
 				<button
 					in:fly={{ y: 200, duration: 250 }}

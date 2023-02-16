@@ -5,7 +5,7 @@
 </script>
 
 <div class="py-4 flex flex-col items-center gap-y-3">
-	<img class="w-4/5 mx-auto" src={imgSrc} loading="lazy" alt={title} />
+	<img class="w-4/5 mx-auto xl:h-[250px] object-contain" src={imgSrc} loading="lazy" alt={title} />
 	<h3 class="font-bold text-3xl">
 		{title}
 	</h3>

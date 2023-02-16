@@ -12,7 +12,7 @@
 		<h4 class="font-semibold text-lg md:text-2xl">Foodeli</h4>
 	</div>
 
-	<div>
+	<div class="hidden xl:block">
 		<ul class="flex gap-7">
 			{#each MENU as m, i}
 				<li
@@ -40,7 +40,7 @@
 		<Icon icon="charm:menu-hamburger" />
 	</button>
 
-	<div class="flex items-center gap-x-6">
+	<div class="xl:flex items-center gap-x-6 hidden">
 		<button class="btn-hover">
 			<Icon icon="akar-icons:search" class="text-2xl" />
 		</button>

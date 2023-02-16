@@ -23,13 +23,13 @@
 	];
 </script>
 
-<footer class="container flex flex-col gap-8">
+<footer class="container flex flex-col xl:flex-row gap-8 xl:gap-10">
 	<div class="flex flex-col gap-y-8">
 		<div class="flex gap-4 items-center">
 			<Logo className="w-6 h-6" />
 			<h4 class="font-semibold text-lg md:text-2xl">Foodeli</h4>
 		</div>
-		<p class="text-base text-base-black-2">
+		<p class="text-base text-base-black-2 xl:max-w-lg">
 			Our job is to filling your tummy with delicious food and with fast and free delivery.
 		</p>
 		<div class="flex gap-10 text-red-primary text-2xl">
@@ -44,7 +44,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="grid grid-cols-2 gap-8">
+	<div class="grid grid-cols-2 gap-8 xl:grid-cols-4">
 		{#each FOOTERS as { title, items }, i}
 			<div>
 				<h6 class="font-rubik font-semibold text-xl mb-6">{title}</h6>

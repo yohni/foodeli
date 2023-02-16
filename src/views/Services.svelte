@@ -2,12 +2,12 @@
 	import ServiceCard from '../components/ServiceCard.svelte';
 </script>
 
-<div class="container py-10">
+<div class="container py-10  xl:py-16">
 	<h6 class="text-center text-red-primary font-semibold text-lg mb-4">WHAT WE SERVE</h6>
 	<h1 class="font-rubik font-bold text-5xl text-center mb-6">
 		Your Favourite Food Delivery Partner
 	</h1>
-	<div>
+	<div class="xl:grid grid-cols-3 gap-x-6">
 		<ServiceCard
 			imgSrc="Order.webp"
 			title="Easy To Order"
